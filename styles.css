@@ -14,12 +14,16 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #ccc;
-    margin: 0 5px;
+	border:1px solid #ccc;
+    background-color: white;
+    
+	color:#ccc;
+	text-align:center;
+	
 }
 
 .circle.active {
-    background-color: #007bff;
+    border:1px solid blue;
 }
 
 .bar-container {
@@ -30,11 +34,11 @@
     height: 2px;
     background-color: #ccc;
     flex: 1;
-    margin: 0 2px;
+    width:30px;
 }
 
 .bar.active {
-    background-color: #007bff;
+    background-color:blue
 }
 
 button {

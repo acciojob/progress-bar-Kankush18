@@ -6,7 +6,7 @@ const nextButton = document.getElementById('next');
 
 let currentCircleIndex = 0;
 
-// Function to update circle and bar classes based on current index
+
 function updateProgress() {
     circles.forEach((circle, index) => {
         if (index === currentCircleIndex) {
@@ -24,7 +24,7 @@ function updateProgress() {
         }
     });
 
-    // Enable/disable buttons based on current index
+    
     if (currentCircleIndex === 0) {
         prevButton.disabled = true;
     } else {
@@ -38,7 +38,7 @@ function updateProgress() {
     }
 }
 
-// Event listener for next button
+
 nextButton.addEventListener('click', () => {
     if (currentCircleIndex < circles.length - 1) {
         currentCircleIndex++;
@@ -46,7 +46,7 @@ nextButton.addEventListener('click', () => {
     }
 });
 
-// Event listener for previous button
+
 prevButton.addEventListener('click', () => {
     if (currentCircleIndex > 0) {
         currentCircleIndex--;
@@ -54,5 +54,5 @@ prevButton.addEventListener('click', () => {
     }
 });
 
-// Initialize progress
+
 updateProgress();
