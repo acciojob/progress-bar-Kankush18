@@ -1,46 +1,41 @@
 /*  your css code here. If applicable */
-.progress-bar {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+.container{
+	display:flex;
+	color:#E9E9EB
 }
-
-.circle-container {
-    display: flex;
-    align-items: center;
+.bar{
+	width:62px;
+	height:5px;
+	background-color:#E9E9EB;
+	margin-top:25px;
 }
-
-.circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-	border:1px solid #ccc;
-    background-color: white;
-    
-	color:#ccc;
-	text-align:center;
+.circle{
+	display:flex;
+	border:5px solid #E9E9EB;
+	padding:5px;
+	height:40px;
+	width:40px;
+	border-radius:60%;
+	justify-content:center;
+	align-items:center;
+}
+button{
+	background-color:#3498DB;
+	color:white;
+	margin:20px;
+	height:40px;
+	width:70px;
+	border-radius:10px;
+	border:#3498DB;
+	color:white;
+	margin:20px;
+}
+.circle.active{
+	border:5px solid #3498DB;
 	
 }
-
-.circle.active {
-    border:1px solid blue;
-}
-
-.bar-container {
-    display: flex;
-}
-
-.bar {
-    height: 2px;
-    background-color: #ccc;
-    flex: 1;
-    width:30px;
-}
-
-.bar.active {
-    background-color:blue
-}
-
-button {
-    margin-right: 10px;
+.bar.active{
+	
+	background-color:#3498DB;
+	
 }
